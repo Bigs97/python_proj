@@ -22,10 +22,6 @@ def plainToCipherText(sentence):
     new_lst_of_num.append((i+3)%27)
   print(new_lst_of_num)
 
-  for i in new_lst_of_num:
-    brand_new_lst_of_num.append(list(word_to_num.keys())[list(word_to_num.values()).index(i)])
-  print(brand_new_lst_of_num)
-
 def cipherToPlainText():
   pass
 
