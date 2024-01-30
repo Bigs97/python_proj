@@ -24,6 +24,8 @@ def plainToCipherText(sentence):
   print(new_lst_of_num)
 
 def cipherToPlainText():
-  pass
+  num_to_word = dict([values,keys] for keys, values in word_to_num.items())
+  # num_to_word = {values:keys for keys, values in word_to_num.items()}
+  print(num_to_word)
 
 main()
