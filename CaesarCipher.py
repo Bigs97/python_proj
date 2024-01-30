@@ -1,5 +1,9 @@
 import string
 
+word_to_num = {word:num for num,word in enumerate(string.ascii_lowercase)}
+word_to_num[' '] = 26
+print(word_to_num)
+
 def main():
   sentence = input('Please enter the sentence to be ciphered: ').strip().lower()
   print(sentence)
@@ -7,9 +11,6 @@ def main():
   cipherToPlainText()
 
 def plainToCipherText(sentence):
-  word_to_num = {word:num for num,word in enumerate(string.ascii_lowercase)}
-  word_to_num[' '] = 26
-  print(word_to_num)
   lst_of_num = []
   new_lst_of_num = []
   brand_new_lst_of_num = []
